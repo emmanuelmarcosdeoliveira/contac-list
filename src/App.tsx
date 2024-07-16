@@ -1,5 +1,3 @@
-import Main from './containers/Main'
-import SideBar from './containers/SideBar'
 import StyleGlobal, { Container } from './styles'
 
 function App() {
@@ -8,8 +6,7 @@ function App() {
       <div>
         <StyleGlobal />
         <Container>
-          <SideBar />
-          <Main />
+        <h1>Helo world</h1>
         </Container>
       </div>
     </>
