@@ -1,3 +1,5 @@
+import ContactList from './containers/ContacList'
+import Sidebar from './containers/Sidebar'
 import StyleGlobal, { Container } from './styles'
 
 function App() {
@@ -6,7 +8,8 @@ function App() {
       <div>
         <StyleGlobal />
         <Container>
-        <h1>Helo world</h1>
+          <Sidebar />
+          <ContactList />
         </Container>
       </div>
     </>
