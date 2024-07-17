@@ -2,8 +2,14 @@ import styled from 'styled-components'
 
 export const Asside = styled.aside`
   padding: 1rem;
-  background-color: #f9f9f9;
-  height: 100dvh;
+  background-color: #f7f7f7;
+  border-radius: 0.5rem 0 0 0.5rem;
+  box-shadow: 2px 0 2px rgba(0, 0, 0, 0.2);
+  @media (max-width: 768px) {
+    border-radius: 0.25rem;
+    box-shadow: none;
+    background-color: #ffffff;
+  }
 `
 export const Filtros = styled.div`
   display: grid;
@@ -18,7 +24,8 @@ export const Search = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  text-align: left;
   input {
     border: none;
     padding: 0.5rem;
@@ -26,4 +33,12 @@ export const Search = styled.div`
     outline-style: none;
     font-size: 0.875rem;
   }
+`
+
+export const Lupa = styled.svg`
+  color: #38bdf8;
+  height: 1rem;
+  width: 1.5rem;
+  display: flex;
+  align-content: center;
 `

@@ -1,11 +1,11 @@
 import { BsPeople } from 'react-icons/bs'
 import * as S from './styles'
 
-export type Props = {
-  ativo?: boolean
+export type CardProps = {
+  ativo?: 'ativado' | 'naoativado'
 }
 
-const FilterCard = (props: Props) => {
+const FilterCard = (props: CardProps) => {
   return (
     <S.Card ativo={props.ativo}>
       <BsPeople />

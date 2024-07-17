@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import { Props } from '.'
+import { CardProps } from '.'
 
-export const Card = styled.div<Props>`
+export const Card = styled.div<CardProps>`
   padding: 0.5rem;
   border: 1px solid ${(props) => (props.ativo ? '#38bdf8' : '#a1a1a1')};
   background-color: ${(props) => (props.ativo ? '#fff' : '#fcfcfc')};

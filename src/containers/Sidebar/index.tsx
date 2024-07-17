@@ -1,16 +1,19 @@
-import { MdOutlinePersonSearch } from 'react-icons/md'
+import { VscSearch } from 'react-icons/vsc'
 import FilterCard from '../../components/FilterCard'
 import * as S from './styles'
+
 const Sidebar = () => {
   return (
     <S.Asside>
       <S.Search>
-        <MdOutlinePersonSearch />
+        <S.Lupa>
+          <VscSearch />
+        </S.Lupa>
         <input type="text" placeholder="Digite o nome do contato" />
       </S.Search>
 
       <S.Filtros>
-        <FilterCard ativo={true} />
+        <FilterCard ativo="ativado" />
         <FilterCard />
         <FilterCard />
         <FilterCard />

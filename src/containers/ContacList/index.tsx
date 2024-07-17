@@ -1,10 +1,10 @@
-import React from 'react'
+import { Main } from './styles'
 
 const ContactList = () => {
   return (
-    <main>
+    <Main>
       <p>2 tarefas marccados como: "categoria" e "termo"</p>
-    </main>
+    </Main>
   )
 }
 
