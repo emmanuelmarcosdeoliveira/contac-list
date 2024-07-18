@@ -1,16 +1,16 @@
-import { BsPeople } from 'react-icons/bs'
 import * as S from './styles'
 
 export type CardProps = {
   ativo?: 'ativado' | 'naoativado'
+  contador: number
+  legenda: string
 }
 
-const FilterCard = (props: CardProps) => {
+const FilterCard = ({ ativo, contador, legenda }: CardProps) => {
   return (
-    <S.Card ativo={props.ativo}>
-      <BsPeople />
-      <S.Contrador>3</S.Contrador>
-      <S.Label>Pendentes</S.Label>
+    <S.Card ativo={ativo}>
+      <S.Contador>{contador}</S.Contador>
+      <S.Label>{legenda}</S.Label>
     </S.Card>
   )
 }

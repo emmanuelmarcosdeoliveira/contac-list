@@ -42,3 +42,12 @@ export const Lupa = styled.svg`
   display: flex;
   align-content: center;
 `
+
+export const MyCard = styled.div`
+  border: 1px solid #222;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  background-color: #fff;
+  font-size: 1.5rem;
+  color: #5e5e5e;
+`

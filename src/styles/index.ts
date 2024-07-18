@@ -5,24 +5,19 @@ const Styleglobal = createGlobalStyle`
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Roboto, sans-serif;
+  font-family: "Montserrat", sans-serif;
+  list-style: none;
 }
-body {
-  @media (max-width: 768px) {
-  
-  }
-}
-
 `
 export const Container = styled.div`
   border-radius: 0.25rem;
   padding: 2rem;
   display: grid;
-  max-width: 1024px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   grid-template-columns: 260px auto;
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     grid-template-columns: 1fr;
     padding: 1rem;
     margin-block: 1rem;

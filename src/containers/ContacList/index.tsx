@@ -1,10 +1,31 @@
-import { Main } from './styles'
+import CardContact from '../../components/CardContact'
+import * as S from './styles'
 
 const ContactList = () => {
   return (
-    <Main>
-      <p>2 tarefas marccados como: "categoria" e "termo"</p>
-    </Main>
+    <S.Main>
+      <p>2 Contatos marccados como: "Todos"</p>
+      <S.Grid>
+        <li>
+          <CardContact />
+        </li>
+        <li>
+          <CardContact />
+        </li>
+        <li>
+          <CardContact />
+        </li>
+        <li>
+          <CardContact />
+        </li>
+        <li>
+          <CardContact />
+        </li>
+        <li>
+          <CardContact />
+        </li>
+      </S.Grid>
+    </S.Main>
   )
 }
 
