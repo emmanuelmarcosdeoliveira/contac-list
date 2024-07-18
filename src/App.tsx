@@ -1,3 +1,4 @@
+
 import ContactList from './containers/ContacList'
 import Sidebar from './containers/Sidebar'
 import StyleGlobal, { Container } from './styles'
@@ -8,9 +9,9 @@ function App() {
       <div>
         <StyleGlobal />
         <Container>
-          <Sidebar />
+         <Sidebar />
           <ContactList />
-        </Container>
+          </Container>
       </div>
     </>
   )
