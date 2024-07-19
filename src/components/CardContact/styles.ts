@@ -1,4 +1,20 @@
 import styled from 'styled-components'
+import variaveis from '../../styles/variaveis'
+
+type TagsProps =  {
+  tag: string
+  children: string
+}
+
+function corDeFundo(props: TagsProps): string {
+  if('tag' in props) {
+    if(props.tag === 'Trabalho') return variaveis.cor3
+    if(props.tag === 'Familia') return variaveis.cor1  
+    if(props.tag === 'Pessoal') return variaveis.cor4
+  }
+  return '#ccc'
+}
+
 
 export const CarddeContatos = styled.div`
   background-color: #fcfcfc;
@@ -9,14 +25,14 @@ export const CarddeContatos = styled.div`
   height: 180px;
   border-radius: 0.25rem;
 `
-export const Tag = styled.span`
+export const Tag = styled.span<TagsProps>`
   padding: 0.25rem 1rem;
   border-radius: 0.25rem;
   font-size: 0.75rem;
   color: #fff;
   font-weight: 700;
   display: inline-block;
-  background-color: #e56;
+  background-color: ${(props) => corDeFundo(props)};
   margin-bottom: 0.5rem;
 `
 
@@ -56,6 +72,21 @@ export const Btn = styled.button`
   border-radius: 0.25rem;
   margin-right: 0.5rem;
 `
+
+export const btnSalvar = styled(Btn)`
+background-color: ${variaveis.cor2};
+color: #0D1E07;
+`
+export const BtncancelarRemover = styled(Btn)`
+background-color: ${variaveis.cor3};
+
+`
+export const btnEditar = styled(Btn)`
+background-color: ${variaveis.cor1};
+
+`
+
+
 export const MyDiv = styled.div`
   display: flex;
   align-items: center;
