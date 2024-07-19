@@ -52,3 +52,4 @@ const CardContact = ({tag, titulo,email, telefone}: CardContact) => {
 }
 
 export default CardContact
+
