@@ -1,6 +1,20 @@
 export default {
+cor0: '#fff',
+cor001: '#fcfcfc',
+cor002: '#f2f2f2',
+cor003: '#f7f7f7',
+cor004: '#f9f9f9',
 cor1: '#FE6F00',
 cor2: '#80DE09',
 cor3: '#C5233B',
-cor4: '#0D7CC4'
+cor4: '#0D7CC4',
+cor5: '#8b8b8b',
+cor6: '#2f3640',
+cor7: '#ccc',
+cor8: '#222',
+cor9: '#EE5566',
+cor10: '#5e5e5e',
+cor11: '#eee',
+cor12: '#a1a1a1',
+cor13: ' #38bdf8',
 }

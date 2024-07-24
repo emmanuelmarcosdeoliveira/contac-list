@@ -8,16 +8,17 @@ type TagsProps =  {
 
 function corDeFundo(props: TagsProps): string {
   if('tag' in props) {
-    if(props.tag === 'Trabalho') return variaveis.cor3
+    if(props.tag === 'trabalho') return variaveis.cor3
     if(props.tag === 'Familia') return variaveis.cor1  
     if(props.tag === 'Pessoal') return variaveis.cor4
   }
-  return '#ccc'
+  return variaveis.cor7
 }
 
 
 export const CarddeContatos = styled.div`
-  background-color: #fcfcfc;
+
+  background-color: ${variaveis.cor001};
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   padding: 1rem;
   width: 380px;
@@ -29,7 +30,7 @@ export const Tag = styled.span<TagsProps>`
   padding: 0.25rem 1rem;
   border-radius: 0.25rem;
   font-size: 0.75rem;
-  color: #fff;
+  color: ${variaveis.cor0};
   font-weight: 700;
   display: inline-block;
   background-color: ${(props) => corDeFundo(props)};
@@ -39,11 +40,11 @@ export const Tag = styled.span<TagsProps>`
 export const MyTitle = styled.h3`
   font-weight: 700;
   font-size: 1rem;
-  color: #222;
+  color: ${variaveis.cor8};
 `
 
 export const Email = styled.p`
-  color: #8b8b8b;
+  color: ${variaveis.cor5};
   font-size: 0.75rem;
   line-height: 150%;
   font-family: 'Roboto Mono', monospace;
@@ -64,11 +65,11 @@ export const ActionBar = styled.div`
 export const Btn = styled.button`
   font-size: 0.75rem;
   font-weight: 700;
-  color: #fff;
+  color: ${variaveis.cor001};
   padding: 0.25rem 0.75rem;
   border: none;
   cursor: pointer;
-  background-color: #2f3640;
+  background-color: ${variaveis.cor6};
   border-radius: 0.25rem;
   margin-right: 0.5rem;
 `
