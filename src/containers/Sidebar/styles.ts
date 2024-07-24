@@ -1,14 +1,16 @@
 import styled from 'styled-components'
+import variaveis from '../../styles/variaveis'
+
 
 export const Asside = styled.aside`
   padding: 1rem;
-  background-color: #f7f7f7;
+  background-color: ${variaveis.cor003};
   border-radius: 0.5rem 0 0 0.5rem;
   box-shadow: 2px 0 2px rgba(0, 0, 0, 0.2);
   @media (max-width: 768px) {
     border-radius: 0.25rem;
     box-shadow: none;
-    background-color: #ffffff;
+    background-color: ${variaveis.cor0};
   }
 `
 export const Filtros = styled.div`
@@ -18,9 +20,9 @@ export const Filtros = styled.div`
   padding-block: 1rem;
 `
 export const Search = styled.div`
-  border: 1px solid #a1a1a1;
+  border: 1px solid ${variaveis.cor12};
   border-radius: 0.25rem;
-  background-color: #eee;
+  background-color: ${variaveis.cor11};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,14 +31,14 @@ export const Search = styled.div`
   input {
     border: none;
     padding: 0.5rem;
-    background-color: #eee;
+    background-color: ${variaveis.cor11};
     outline-style: none;
     font-size: 0.875rem;
   }
 `
 
 export const Lupa = styled.svg`
-  color: #38bdf8;
+  color: ${variaveis.cor13};
   height: 1rem;
   width: 1.5rem;
   display: flex;
