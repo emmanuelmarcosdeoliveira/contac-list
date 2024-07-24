@@ -2,6 +2,8 @@ import { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import {remover} from "../../store/reducers/contacts"
 
+
+
 import * as S from './styles'
 
 import { FaPhoneAlt } from 'react-icons/fa'
@@ -14,6 +16,7 @@ type Props = ContatosClass
 const CardContact = ({tag, titulo,email, telefone, id}: Props) => {
   const dispatch = useDispatch()
   const [editando, setEditando]  = useState(false)
+
 
   return (
     <S.CarddeContatos>
@@ -42,6 +45,7 @@ const CardContact = ({tag, titulo,email, telefone, id}: Props) => {
       <>
 <S.btnEditar onClick={() => setEditando(true)}  >Editar</S.btnEditar>
 <S.BtncancelarRemover onClick={() => dispatch(remover(id))}>Remover</S.BtncancelarRemover>
+
       </>
     )}
       </S.ActionBar>

@@ -17,6 +17,7 @@ function corDeFundo(props: TagsProps): string {
 
 
 export const CarddeContatos = styled.div`
+
   background-color: ${variaveis.cor001};
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   padding: 1rem;
