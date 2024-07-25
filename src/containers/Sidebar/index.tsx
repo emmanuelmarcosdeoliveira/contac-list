@@ -5,15 +5,22 @@ import { LuContact } from 'react-icons/lu'
 import { SlPeople } from 'react-icons/sl'
 import FilterCard from '../../components/FilterCard'
 import * as S from './styles'
+import { useDispatch, useSelector } from 'react-redux'
+import { alteraTermo } from '../../store/reducers/filter'
+import { RootReducer } from '../../store'
+
 
 const Sidebar = () => {
+  const dispatch = useDispatch()
+  const {termo } = useSelector((state: RootReducer) => state.filtro) 
+ 
   return (
     <S.Asside>
       <S.Search>
         <S.Lupa>
           <VscSearch />
         </S.Lupa>
-        <input type="text" placeholder="Digite o nome do contato" />
+        <input type="text" placeholder="Digite o nome do contato" value={termo} onChange={evento => dispatch(alteraTermo(evento.target.value))} />
       </S.Search>
 
       <S.Filtros>

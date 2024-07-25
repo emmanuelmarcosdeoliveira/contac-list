@@ -12,7 +12,6 @@ import ContatosClass from '../../models/Contatos'
 
 type Props = ContatosClass
 
-
 const CardContact = ({tag, 
   titulo,
   email: emailOriginal,
@@ -40,9 +39,6 @@ const CardContact = ({tag,
     setEmail(emailOriginal)
     setTelefone(telefoneOriginal)
    }
-
-
-
 
   return (
     <S.CarddeContatos>
