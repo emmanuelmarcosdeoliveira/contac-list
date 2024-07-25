@@ -37,29 +37,54 @@ export const Tag = styled.span<TagsProps>`
   margin-bottom: 0.5rem;
 `
 
-export const MyTitle = styled.h3`
+export const MyTitle = styled.textarea`
   font-weight: 700;
   font-size: 1rem;
   color: ${variaveis.cor8};
+  height: 1.30rem;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  resize: none;
+  border: none;
+  background-color: transparent;
 `
 
-export const Email = styled.p`
+export const Email = styled.textarea`
   color: ${variaveis.cor5};
   font-size: 0.75rem;
   line-height: 150%;
   font-family: 'Roboto Mono', monospace;
+  height: 1.30rem;
+  font-family: "Roboto Mono" , monospace;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  resize: none;
+  border: none;
+  background-color: transparent;
 `
 
-export const TelPhone = styled.p`
+
+export const TelPhone = styled.textarea`
   color: #000;
   font-weight: 700;
   font-family: 1rem;
+  height: 1.30rem;
+  font-family: Roboto , monospace;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  resize: none;
+  border: none;
+  background-color: transparent;
 `
 
 export const ActionBar = styled.div`
   margin-top: 1rem;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   padding-block: 0.5rem;
+ 
 `
 
 export const Btn = styled.button`
