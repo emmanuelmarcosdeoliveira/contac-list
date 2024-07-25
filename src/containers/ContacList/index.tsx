@@ -8,10 +8,9 @@ import { RootReducer } from '../../store'
 const ContactList = () => {
   const {itens}  =  useSelector((state: RootReducer) => state.contatos )
   const {termo} = useSelector((state: RootReducer) => state.filtro )
-const filtraContatos  = () => {
+  const filtraContatos  = () => {
   return itens.filter(contato => contato.titulo.toLowerCase().search(termo.toLowerCase()) >= 0 )
 }
-
   return (
     <S.Main>
       <p>2 Contatos marccados como:  "categoria" e"{termo}"</p>

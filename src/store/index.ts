@@ -6,10 +6,8 @@ const store = configureStore({
   reducer: {
     contatos: contactsReducer, 
     filtro: filterReducer
-
   }
 })
-
 
 export type RootReducer  = ReturnType<typeof store.getState>
 export default store

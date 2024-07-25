@@ -8,6 +8,7 @@ import ContatosClass from '../../models/Contatos'
 import { FaPhoneAlt } from 'react-icons/fa'
 import { MdOutlineMail } from 'react-icons/md'
 import { IoPeopleCircleOutline } from 'react-icons/io5'
+import ContatosClass from '../../models/Contatos'
 
 type Props = ContatosClass
 
