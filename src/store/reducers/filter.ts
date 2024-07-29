@@ -3,13 +3,14 @@ import * as enums from '../../utils/enums/contatos'
 
 type FilterSate = {
   termo?: string
-  criterio: 'Trabalho' | 'Pessoal' | 'Familia' | 'Todas'
+  criterio: 'Trabalho' | 'Pessoal' | 'Familia' | 'Todos'
   valor?: enums.Grupos
 }
 
 const initialState: FilterSate = {
   termo: '',
-  criterio: 'Todas'
+  criterio: 'Todos'
+
 }
 
 const filterSlice = createSlice({
@@ -28,4 +29,3 @@ const filterSlice = createSlice({
 
 export const { alteraTermo, alterarFiltro } = filterSlice.actions
 export default filterSlice.reducer
-

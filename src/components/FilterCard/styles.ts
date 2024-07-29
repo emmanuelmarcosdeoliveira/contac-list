@@ -5,7 +5,7 @@ type Props = { ativo: boolean }
 
 export const Card = styled.div<Props>`
   padding: 0.5rem;
-  color: ${(props) => (props.ativo ? variaveis.cor9 : variaveis.cor6)};
+  color: ${(props) => (props.ativo ? variaveis.cor3 : variaveis.cor6)};
   border-radius: 0.25rem;
   text-align: right;
   font-size: 1.5rem;

@@ -6,7 +6,7 @@ import { RootReducer } from '../../store'
 
 export type CardProps = {
   legenda: string
-  criterio: 'Trabalho' | 'Pessoal' | 'Familia' | 'Todas'
+  criterio: 'Trabalho' | 'Pessoal' | 'Familia' | 'Todos'
   valor?: enums.Grupos
 }
 
@@ -19,13 +19,14 @@ const FilterCard = ({ legenda, criterio, valor }: CardProps) => {
     return mesmoCriterio && mesmoValor
   }
   const contarContatos = () => {
-    if (criterio === 'Todas') return contatos.itens.length
+    if (criterio === 'Todos') return contatos.itens.length
     if (valor === enums.Grupos.FAMILY) {
       return contatos.itens.filter((item) => item.tag === 'Familia').length
     } else if (valor === enums.Grupos.GUYS) {
       return contatos.itens.filter((item) => item.tag === 'Pessoal').length
     } else if (valor === enums.Grupos.WORK) {
-      return contatos.itens.filter((item) => item.tag === 'Pessoal').length
+      return contatos.itens.filter((item) => item.tag === 'Trabalho').length
+
     }
   }
 

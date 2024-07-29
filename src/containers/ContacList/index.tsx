@@ -33,14 +33,15 @@ const ContactList = () => {
       return itens
     }
   }
+  const contatos = filtraContatos()
   return (
     <S.Main>
       <p>
-        Contatos marccados como: {criterio} e "{termo}"
+        {contatos.length} Contato(s) marcado(s) como: {criterio} e "{termo}"
       </p>
       <S.Grid>
-        {filtraContatos().map((c) => (
-          <li key={c.titulo}>
+        {contatos.map((c) => (
+         <li key={c.titulo}>
             <CardContact
               tag={c.tag}
               titulo={c.titulo}
@@ -50,8 +51,7 @@ const ContactList = () => {
             />
           </li>
         ))}
-
-      </S.Grid>
+     </S.Grid>
     </S.Main>
   )
 }
