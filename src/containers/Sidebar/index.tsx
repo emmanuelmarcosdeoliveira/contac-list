@@ -14,7 +14,7 @@ const Sidebar = () => {
   const dispatch = useDispatch()
   const { termo } = useSelector((state: RootReducer) => state.filtro)
 
- return (
+  return (
     <S.Asside>
       <S.Search>
         <S.Lupa>
@@ -26,7 +26,6 @@ const Sidebar = () => {
           value={termo}
           onChange={(evento) => dispatch(alteraTermo(evento.target.value))}
         />
-       
       </S.Search>
 
       <S.Filtros>
@@ -56,7 +55,7 @@ const Sidebar = () => {
         </S.MyCard>
         <S.MyCard>
           <LuContact />
-          <FilterCard criterio="Todas" legenda="Todos" />
+          <FilterCard criterio="Todos" legenda="Todos" />
         </S.MyCard>
       </S.Filtros>
     </S.Asside>
