@@ -10,6 +10,7 @@ type FilterSate = {
 const initialState: FilterSate = {
   termo: '',
   criterio: 'Todos'
+
 }
 
 const filterSlice = createSlice({

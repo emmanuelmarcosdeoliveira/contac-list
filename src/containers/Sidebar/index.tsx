@@ -14,7 +14,7 @@ const Sidebar = () => {
   const dispatch = useDispatch()
   const { termo } = useSelector((state: RootReducer) => state.filtro)
 
-  return (
+ return (
     <S.Asside>
       <S.Search>
         <S.Lupa>
