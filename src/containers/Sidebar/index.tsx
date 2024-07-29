@@ -8,41 +8,57 @@ import * as S from './styles'
 import { useDispatch, useSelector } from 'react-redux'
 import { alteraTermo } from '../../store/reducers/filter'
 import { RootReducer } from '../../store'
-
+import * as enums from '../../utils/enums/contatos'
 
 const Sidebar = () => {
   const dispatch = useDispatch()
-  const {termo } = useSelector((state: RootReducer) => state.filtro) 
- 
+  const { termo } = useSelector((state: RootReducer) => state.filtro)
+
   return (
     <S.Asside>
       <S.Search>
         <S.Lupa>
           <VscSearch />
         </S.Lupa>
-        <input type="text" placeholder="Digite o nome do contato" value={termo} onChange={evento => dispatch(alteraTermo(evento.target.value))} />
+        <input
+          type="text"
+          placeholder="Digite o nome do contato"
+          value={termo}
+          onChange={(evento) => dispatch(alteraTermo(evento.target.value))}
+        />
       </S.Search>
 
       <S.Filtros>
         <S.MyCard>
           <MdOutlineWorkOutline />
-          <FilterCard legenda="Trabalho" contador={1} ativo="ativado" />
+          <FilterCard
+            valor={enums.Grupos.WORK}
+            criterio="Trabalho"
+            legenda="Trabalho"
+          />
         </S.MyCard>
         <S.MyCard>
           <GoPeople />
-          <FilterCard legenda="Pessoal" contador={2} />
+          <FilterCard
+            valor={enums.Grupos.GUYS}
+            criterio="Pessoal"
+            legenda="Pessoal"
+          />
         </S.MyCard>
         <S.MyCard>
           <SlPeople />
-          <FilterCard legenda="Familia" contador={3} />
+          <FilterCard
+            valor={enums.Grupos.FAMILY}
+            criterio="Familia"
+            legenda="Familia"
+          />
         </S.MyCard>
         <S.MyCard>
           <LuContact />
-          <FilterCard legenda="Todos" contador={6} />
+          <FilterCard criterio="Todas" legenda="Todos" />
         </S.MyCard>
       </S.Filtros>
     </S.Asside>
   )
 }
-
 export default Sidebar
