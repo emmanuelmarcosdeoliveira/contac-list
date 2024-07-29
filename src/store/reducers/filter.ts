@@ -28,3 +28,4 @@ const filterSlice = createSlice({
 
 export const { alteraTermo, alterarFiltro } = filterSlice.actions
 export default filterSlice.reducer
+

@@ -50,6 +50,7 @@ const ContactList = () => {
             />
           </li>
         ))}
+
       </S.Grid>
     </S.Main>
   )
