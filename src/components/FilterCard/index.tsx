@@ -26,7 +26,6 @@ const FilterCard = ({ legenda, criterio, valor }: CardProps) => {
       return contatos.itens.filter((item) => item.tag === 'Pessoal').length
     } else if (valor === enums.Grupos.WORK) {
       return contatos.itens.filter((item) => item.tag === 'Trabalho').length
-
     }
   }
 
