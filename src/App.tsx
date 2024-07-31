@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import StyleGlobal, { Container } from './styles'
 import store from './store'
 import Home from './pages/Home'
+import Register from './pages/Register'
 
 const rotas = createBrowserRouter([
   {
@@ -10,8 +11,8 @@ const rotas = createBrowserRouter([
     element: <Home />
   },
   {
-    path: '/cadastrodecontatos',
-    element: <h1>Nova Contato</h1>
+    path: '/cadastro',
+    element: <Register />
   }
 ])
 

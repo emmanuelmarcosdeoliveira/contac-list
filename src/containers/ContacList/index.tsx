@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux'
-
+import { Main } from '../../styles/'
 import CardContact from '../../components/CardContact'
 import * as S from './styles'
 import { RootReducer } from '../../store'
@@ -17,15 +17,15 @@ const ContactList = () => {
       )
       if (criterio === 'Trabalho') {
         contatoFiltrados = contatoFiltrados.filter(
-          (contato) => contato.tag === enums.Grupos.WORK
+          (contato) => contato.grupos === enums.Grupos.WORK
         )
       } else if (criterio === 'Pessoal') {
         contatoFiltrados = contatoFiltrados.filter(
-          (contato) => contato.tag === enums.Grupos.GUYS
+          (contato) => contato.grupos === enums.Grupos.GUYS
         )
       } else if (criterio === 'Familia') {
         contatoFiltrados = contatoFiltrados.filter(
-          (contato) => contato.tag === enums.Grupos.FAMILY
+          (contato) => contato.grupos === enums.Grupos.FAMILY
         )
       }
       return contatoFiltrados
@@ -35,15 +35,26 @@ const ContactList = () => {
   }
   const contatos = filtraContatos()
   return (
-    <S.Main>
+    <Main>
       <p>
-        {contatos.length} Contato(s) marcado(s) como: {criterio} e "{termo}"
+        <span
+          style={{
+            color: 'white',
+            fontWeight: 'bold',
+            backgroundColor: '#C5233B',
+            padding: '.25rem',
+            borderRadius: '25%'
+          }}
+        >
+          {contatos.length}
+        </span>{' '}
+        Contato(s) marcado(s) como: {criterio} e "{termo}"
       </p>
       <S.Grid>
         {contatos.map((c) => (
-         <li key={c.titulo}>
+          <li key={c.titulo}>
             <CardContact
-              tag={c.tag}
+              grupos={c.grupos}
               titulo={c.titulo}
               email={c.email}
               telefone={c.telefone}
@@ -51,8 +62,8 @@ const ContactList = () => {
             />
           </li>
         ))}
-     </S.Grid>
-    </S.Main>
+      </S.Grid>
+    </Main>
   )
 }
 

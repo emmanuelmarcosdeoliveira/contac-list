@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 import variaveis from '../../styles/variaveis'
 
-
 export const Asside = styled.aside`
   padding: 1rem;
   background-color: ${variaveis.cor003};
@@ -38,7 +37,7 @@ export const Search = styled.div`
 `
 
 export const Lupa = styled.svg`
-  color: ${variaveis.cor13};
+  color: #0d7cc4;
   height: 1rem;
   width: 1.5rem;
   display: flex;
@@ -49,7 +48,7 @@ export const MyCard = styled.div`
   border: 1px solid #222;
   padding: 0.5rem;
   border-radius: 0.25rem;
-  background-color: #fff;
+  background-color: #f2f2f2;
   font-size: 1.5rem;
   color: #5e5e5e;
 `
