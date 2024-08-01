@@ -5,12 +5,14 @@ import store from './store'
 import Home from './pages/Home'
 import Register from './pages/Register'
 
+
 const rotas = createBrowserRouter([
   {
     path: '/',
     element: <Home />
   },
   {
+development
     path: '/cadastro',
     element: <Register />
   }
