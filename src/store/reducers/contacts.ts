@@ -9,38 +9,45 @@ type ContatosState = {
 const initialState: ContatosState = {
   itens: [
     {
-      tag: enums.Grupos.WORK,
+      grupos: enums.Grupos.WORK,
       titulo: 'EBAC',
       telefone: '11-968336094',
       email: 'ebac@gmail.com',
       id: 1
     },
     {
-      tag: enums.Grupos.FAMILY,
+      grupos: enums.Grupos.FAMILY,
       titulo: 'João',
       telefone: '11-99999-9999',
       email: 'joaoc@gmail.com',
       id: 2
     },
     {
-      tag: enums.Grupos.GUYS,
+      grupos: enums.Grupos.FAMILY,
       titulo: 'Vida',
       telefone: '11-99999-9999',
       email: 'vidac@gmail.com',
       id: 3
     },
     {
-      tag: enums.Grupos.FAMILY,
+      grupos: enums.Grupos.FAMILY,
       titulo: 'Everton',
       telefone: '11-99999-9999',
       email: 'eventon@gmail.com',
       id: 4
     },
     {
-      tag: enums.Grupos.FAMILY,
+      grupos: enums.Grupos.FAMILY,
       titulo: 'Elisa',
       telefone: '11-99999-9999',
       email: 'elisa@gmail.com',
+      id: 5
+    },
+    {
+      grupos: enums.Grupos.GUYS,
+      titulo: 'Rockseat',
+      telefone: '11-99999-9999',
+      email: 'rockset@gmail.com',
       id: 5
     }
   ]
@@ -62,10 +69,25 @@ const contactsSlice = createSlice({
       if (indexContato >= 0) {
         state.itens[indexContato] = action.payload
       }
+    },
+    cadastrar: (state, action: PayloadAction<Omit<Contatos, 'id'>>) => {
+      const contatoExiste = state.itens.find(
+        (contato) =>
+          contato.titulo.toLowerCase() === action.payload.titulo.toLowerCase()
+      )
+      if (contatoExiste) {
+        alert('Já Existe um contato com esse nome "ou" Descrição')
+      } else {
+        const ultimoContato = state.itens[state.itens.length - 1]
+        const contatoNovo = {
+          ...action.payload,
+          id: ultimoContato ? ultimoContato.id + 1 : 1
+        }
+        state.itens.push(contatoNovo)
+      }
     }
   }
 })
 
-
-export const { remover, editar } = contactsSlice.actions
+export const { remover, editar, cadastrar } = contactsSlice.actions
 export default contactsSlice.reducer

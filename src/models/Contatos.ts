@@ -1,20 +1,25 @@
 import * as enums from '../utils/enums/contatos'
 
 class Contatos {
-  tag: enums.Grupos 
+  grupos: enums.Grupos
   titulo: string
-  email: string 
-  telefone: string 
-  id: number 
+  telefone: string
+  email: string
+  id: number
 
-
-  constructor(tag: enums.Grupos, titulo: string, email: string, telefone: string, id: number ) {
-    this.tag  = tag
+  constructor(
+    grupos: enums.Grupos,
+    titulo: string,
+    telefone: string,
+    email: string,
+    id: number
+  ) {
+    this.grupos = grupos
     this.titulo = titulo
+    this.telefone = telefone
     this.email = email
-    this.telefone  = telefone
-    this.id  = id
+    this.id = id
   }
 }
 
-export default Contatos 
+export default Contatos

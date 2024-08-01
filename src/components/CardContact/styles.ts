@@ -1,25 +1,23 @@
 import styled from 'styled-components'
 import variaveis from '../../styles/variaveis'
 
-type TagsProps =  {
-  tag: string
+type TagsProps = {
+  grupos: string
   children: string
 }
 
 function corDeFundo(props: TagsProps): string {
-  if('tag' in props) {
-    if(props.tag === 'trabalho') return variaveis.cor3
-    if(props.tag === 'Familia') return variaveis.cor1  
-    if(props.tag === 'Pessoal') return variaveis.cor4
+  if ('grupos' in props) {
+    if (props.grupos === 'trabalho') return variaveis.cor3
+    if (props.grupos === 'Familia') return variaveis.cor1
+    if (props.grupos === 'Pessoal') return variaveis.cor4
   }
   return variaveis.cor7
 }
 
-
 export const CarddeContatos = styled.div`
-
-  background-color: ${variaveis.cor001};
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #f2f2f2;
+  box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.15);
   padding: 1rem;
   width: 380px;
   width: 100%;
@@ -41,7 +39,7 @@ export const MyTitle = styled.textarea`
   font-weight: 700;
   font-size: 1rem;
   color: ${variaveis.cor8};
-  height: 1.30rem;
+  height: 1.3rem;
   cursor: pointer;
   display: block;
   width: 100%;
@@ -55,8 +53,8 @@ export const Email = styled.textarea`
   font-size: 0.75rem;
   line-height: 150%;
   font-family: 'Roboto Mono', monospace;
-  height: 1.30rem;
-  font-family: "Roboto Mono" , monospace;
+  height: 1.3rem;
+  font-family: 'Roboto Mono', monospace;
   cursor: pointer;
   display: block;
   width: 100%;
@@ -65,13 +63,12 @@ export const Email = styled.textarea`
   background-color: transparent;
 `
 
-
 export const TelPhone = styled.textarea`
   color: #000;
   font-weight: 700;
   font-family: 1rem;
-  height: 1.30rem;
-  font-family: Roboto , monospace;
+  height: 1.3rem;
+  font-family: Roboto, monospace;
   cursor: pointer;
   display: block;
   width: 100%;
@@ -84,7 +81,6 @@ export const ActionBar = styled.div`
   margin-top: 1rem;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   padding-block: 0.5rem;
- 
 `
 
 export const Btn = styled.button`
@@ -100,18 +96,15 @@ export const Btn = styled.button`
 `
 
 export const btnSalvar = styled(Btn)`
-background-color: ${variaveis.cor2};
-color: #0D1E07;
+  background-color: ${variaveis.cor2};
+  color: #0d1e07;
 `
 export const BtncancelarRemover = styled(Btn)`
-background-color: ${variaveis.cor3};
-
+  background-color: ${variaveis.cor3};
 `
 export const btnEditar = styled(Btn)`
-background-color: ${variaveis.cor1};
-
+  background-color: ${variaveis.cor1};
 `
-
 
 export const MyDiv = styled.div`
   display: flex;

@@ -21,12 +21,11 @@ const FilterCard = ({ legenda, criterio, valor }: CardProps) => {
   const contarContatos = () => {
     if (criterio === 'Todos') return contatos.itens.length
     if (valor === enums.Grupos.FAMILY) {
-      return contatos.itens.filter((item) => item.tag === 'Familia').length
+      return contatos.itens.filter((item) => item.grupos === 'Familia').length
     } else if (valor === enums.Grupos.GUYS) {
-      return contatos.itens.filter((item) => item.tag === 'Pessoal').length
+      return contatos.itens.filter((item) => item.grupos === 'Pessoal').length
     } else if (valor === enums.Grupos.WORK) {
-      return contatos.itens.filter((item) => item.tag === 'Trabalho').length
-
+      return contatos.itens.filter((item) => item.grupos === 'Trabalho').length
     }
   }
 
