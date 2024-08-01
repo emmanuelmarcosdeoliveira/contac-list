@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import variaveis from '../../styles/variaveis'
+import { Botao } from '../../components/InlcudeContact/styles'
 
 export const Asside = styled.aside`
   padding: 1rem;
@@ -51,4 +52,14 @@ export const MyCard = styled.div`
   background-color: #f2f2f2;
   font-size: 1.5rem;
   color: #5e5e5e;
+`
+
+export const BtnVoltar = styled.button`
+  width: 325px;
+  width: 100%;
+  background-color: #c5233b;
+  padding: 0.5rem 3.5rem;
+  border-radius: 4px;
+  font-weight: 500;
+  color: white;
 `

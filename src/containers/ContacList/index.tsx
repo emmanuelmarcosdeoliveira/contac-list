@@ -48,7 +48,10 @@ const ContactList = () => {
         >
           {contatos.length}
         </span>{' '}
-        Contato(s) marcado(s) como: {criterio} e "{termo}"
+        Contato(s) classificados(s) como <strong>{criterio}</strong> <br />
+        <p style={{ marginLeft: '1.4rem' }}>
+          Busca como: <strong>{termo}</strong>{' '}
+        </p>
       </p>
       <S.Grid>
         {contatos.map((c) => (

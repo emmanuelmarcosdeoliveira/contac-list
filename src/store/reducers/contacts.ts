@@ -45,9 +45,9 @@ const initialState: ContatosState = {
     },
     {
       grupos: enums.Grupos.GUYS,
-      titulo: 'Rockseat',
+      titulo: 'Ricardo',
       telefone: '11-99999-9999',
-      email: 'rockset@gmail.com',
+      email: 'ricardo@gmail.com',
       id: 5
     }
   ]

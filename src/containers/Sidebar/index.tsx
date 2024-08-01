@@ -69,7 +69,9 @@ const Sidebar = ({ mostrarFilters }: Props) => {
           </S.Filtros>
         </>
       ) : (
-        <button onClick={() => navigate('/')}>Voltar para Contatos</button>
+        <S.BtnVoltar as="btn" onClick={() => navigate('/')}>
+          Lista Contatos
+        </S.BtnVoltar>
       )}
     </S.Asside>
   )
