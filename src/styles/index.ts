@@ -30,6 +30,7 @@ export const Container = styled.div`
   }
 `
 export const Main = styled.main`
+
   padding: 1.5rem;
   border-radius: 0rem 0.5rem 0.5rem 0rem;
   background-color: ${variaveis.cor002};

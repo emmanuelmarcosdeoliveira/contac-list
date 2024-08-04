@@ -3,9 +3,13 @@ import { Main } from '../../styles/'
 
 import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
-import { AreaTag, BtnCadastro, Dados, Fild, Opcao } from './styles'
+import { AreaTag, BacktoPage, BtnCadastro, Dados, Fild, Opcao } from './styles'
 import * as enums from '../../utils/enums/contatos'
 import { cadastrar } from '../../store/reducers/contacts'
+import {Link} from 'react-router-dom'
+
+import { MdArrowBack } from "react-icons/md";
+import { IoAdd } from "react-icons/io5";
 
 const Formulario = () => {
   const dispatch = useDispatch()
@@ -72,13 +76,17 @@ const Formulario = () => {
             </Opcao>
           ))}
 
-          {/* <input name="prioridade" type="radio" id="Trabalho" />
-        <label htmlFor="Trabalho">Trabalho</label>
-        <input name="prioridade" type="radio" id="Familia" />
-        <label htmlFor="Familia">Familia</label> */}
+         
         </AreaTag>
-        <BtnCadastro type="submit">Cadastrar</BtnCadastro>
-      </form>
+        <div style={{display: 'flex'}}>
+        <BtnCadastro type="submit"> <IoAdd style={{fontSize: '1rem', marginLeft:'.5rem'}} />Cadastrar</BtnCadastro>
+        <div>
+       <Link to="/">
+               <BacktoPage style={{display: 'inline-flex', alignItems: 'center', marginLeft: '1rem'}}>  <MdArrowBack style={{fontSize: '1rem', marginLeft:'.5rem'}} />Voltar para  Contatos </BacktoPage>
+       </Link>
+        </div>
+        </div>
+            </form>
     </Main>
   )
 }
