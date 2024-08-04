@@ -1,11 +1,14 @@
 import Formulario from '../../containers/Formulario/Index'
-import Sidebar from '../../containers/Sidebar'
+import   { Laycontainer } from './styles'
+ 
+
 
 const Register = () => {
   return (
     <>
-      <Sidebar mostrarFilters={false} />
-      <Formulario />
+          <Laycontainer>  
+         <Formulario  />
+         </Laycontainer>
     </>
   )
 }

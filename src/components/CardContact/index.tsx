@@ -42,7 +42,13 @@ const CardContact = ({
   }
 
   return (
-    <S.CarddeContatos>
+        <S.CarddeContatos>
+          <div style={{display: 'flex'}}>
+
+        
+        
+          <div>
+       
       <S.Tag grupos={grupos}>{grupos}</S.Tag>
       {editando && (
         <em
@@ -51,7 +57,8 @@ const CardContact = ({
             color: '#fff',
             padding: '.25rem .50rem',
             borderRadius: '4px',
-            marginLeft: '11rem',
+            marginLeft: '1rem',
+            marginTop: "-8rem",
             fontWeight: '600',
             fontSize: '.75rem'
           }}
@@ -85,6 +92,13 @@ const CardContact = ({
           {telefone}
         </S.TelPhone>
       </S.MyDiv>
+      </div>
+      <div style={{display: 'flex', justifyContent: 'space-between' }}>
+     <IoPeopleCircleOutline
+          style={{ fontSize: '6.5rem',    opacity: '10%' }}
+          />
+          </div>
+      </div>
       <S.ActionBar>
         {editando ? (
           <>

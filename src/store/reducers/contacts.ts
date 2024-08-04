@@ -23,8 +23,8 @@ const initialState: ContatosState = {
       id: 2
     },
     {
-      grupos: enums.Grupos.FAMILY,
-      titulo: 'Vida',
+      grupos: enums.Grupos.GUYS,
+      titulo: 'Maria',
       telefone: '11-99999-9999',
       email: 'vidac@gmail.com',
       id: 3
@@ -48,7 +48,7 @@ const initialState: ContatosState = {
       titulo: 'Ricardo',
       telefone: '11-99999-9999',
       email: 'ricardo@gmail.com',
-      id: 5
+      id: 6
     }
   ]
 }

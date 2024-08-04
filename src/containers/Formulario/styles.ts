@@ -40,13 +40,34 @@ export const AreaTag = styled.div`
 export const BtnCadastro = styled.button`
   display: flex;
   justify-content: center;
-  width: 120px;
+  width: 220px;
   margin-block: 1rem;
   padding: 8px 36px;
   border-radius: 4px;
-  background-color: ${variaveis.cor2};
+  background-color: #25d366;
   font-weight: 600;
   cursor: pointer;
+`
+
+export const BacktoPage = styled.button`
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+    width: 280px;
+  margin-block: 1rem;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background-color: ${variaveis.cor3};
+  font-weight: 600;
+  a {
+    text-decoration: none!important;
+  }
+
+
+
+
 `
 export const Opcao = styled.div`
   display: flex;
