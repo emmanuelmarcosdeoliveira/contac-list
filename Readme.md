@@ -140,24 +140,27 @@ pnpm  install
 ## Usage
 
 **2. Inicie o Servidor com o seguinte comando dentro do Terminal**<br>
+
+<details open>
+
+<summary>Gerenciador de pacotes usado</summary>
+
+**Pnpm**
+
+</sdetais>
+
 <sub>Command Line</sub>
 
-```pnpm
-pnpm dev
+```npm
+pnpm  run dev
 ```
 
 </br>
-</br>
-<!-- Importante -->
 
-> [!IMPORTANT]
->
-> O projeto será iniciado, e será aberto no Navegador.
-> Você também pode acessa-lo digitando na Barra de Endereço do seu Navegador
-> **localhost://5173**
+> [!TIP]
+> Helpful advice for doing things better or more easily.
 
-</br>
-
+<br>
  <!-- Imagem de Demostração -->
 <h3 align="center"> Imagem de demostração do Projeto</h3>
 
