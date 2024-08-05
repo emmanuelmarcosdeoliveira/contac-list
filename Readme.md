@@ -24,7 +24,7 @@
   - [technologies and tools](#technologies-and-tools)
 - [Instalation](#instalation)
 - [Usage](#usage)
-- [Update](#update)
+- [Update](#update)[^1]
 - [References](#references)
 - [Contributors or owners](#contributors-or-owners)
 - [Contact](#contact)
@@ -188,11 +188,9 @@ Acesse a versão on-line Projeto clicando no Link Abaixo
 </div>
 <br>
 
-## Update
+## Update[^1]
 
 <br>
- 
->  [!NOTE]
 
 > Aqui ire postar as atualizações desse Projeto:
 
