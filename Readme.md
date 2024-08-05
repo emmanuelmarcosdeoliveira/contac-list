@@ -11,7 +11,7 @@
 
 ![Static Badge](https://img.shields.io/badge/--path?style=plastic&logo=react&logoColor=%2358C4DC&logoSize=auto&label=React&labelColor=%23000&color=%2358C4DC)
 ![GitHub top language](https://img.shields.io/github/languages/top/emmanuelmarcosdeoliveira/contac-list?style=plastic&labelColor=%23000)
-![GitHub forks](https://img.shields.io/github/forks/emmanuelmarcosdeoliveira/js-slide-origamid?style=plastic&labelColor=%23000)
+![GitHub forks](https://img.shields.io/github/forks/emmanuelmarcosdeoliveira/contac-list?style=plastic&labelColor=%23000)
 
 <!-- Menu -->
 
