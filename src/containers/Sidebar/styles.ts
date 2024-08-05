@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import variaveis from '../../styles/variaveis'
-import { Botao } from '../../components/InlcudeContact/styles'
 
 export const Asside = styled.aside`
   padding: 1rem;

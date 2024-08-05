@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import variaveis from '../../styles/variaveis'
 export const Botao = styled(Link)`
   font-weight: 500;
   margin-bottom: 1.25rem;

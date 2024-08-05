@@ -1,4 +1,3 @@
-import { LuContact2 } from 'react-icons/lu'
 import { Botao } from './styles'
 import { RiContactsLine } from "react-icons/ri";
 const IncludeContact = () => {
