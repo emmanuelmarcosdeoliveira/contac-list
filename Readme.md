@@ -150,6 +150,8 @@ pnpm dev
 </br>
 <!-- Importante -->
 
+> [!IMPORTANT]
+>
 > O projeto será iniciado, e será aberto no Navegador.
 > Você também pode acessa-lo digitando na Barra de Endereço do seu Navegador
 > **localhost://5173**
@@ -157,19 +159,19 @@ pnpm dev
 </br>
 
  <!-- Imagem de Demostração -->
-<h3 align="center"> Imagem de demostração do Projeto
+<h3 align="center"> Imagem de demostração do Projeto</h3>
 
 </br>
 </br>
 
-<img src="./public/print-project.png" alt="Print do Projeto"/>
-</h3>
+<img src="./src/public/tela-principal.png" alt="Print do Projeto"/>
+<img src="./src/public/tela-cadastro.png" alt="Print do Projeto"/>
 
-<h3 align="center">📽️project demonstration video</h3>
+<!-- <h3 align="center">📽️project demonstration video</h3>
 <br>
 <p align="center">Video de Demostraçào</p>
 
-https://github.com/emmanuelmarcosdeoliveira/animais-fantasticos/assets/116108389/660fb676-c9a6-4083-b28c-8e952eaa6345
+https://github.com/emmanuelmarcosdeoliveira/animais-fantasticos/assets/116108389/660fb676-c9a6-4083-b28c-8e952eaa6345 -->
 
 <br>
  <div align="center">
