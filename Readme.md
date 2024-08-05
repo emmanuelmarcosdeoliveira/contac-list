@@ -1,5 +1,5 @@
 <!-- Banner de Apresentação -->
- <img src="https://github.com/emmanuelmarcosdeoliveira/servidor-estatico/blob/main/banner/emmanuelOliveira.gif" alt="banner-github">
+ <img src="https://github.com/emmanuelmarcosdeoliveira/servidor-estatico/blob/main/github/emmanuelOliveira.gif" alt="banner-github">
 <br>
 <br>
 
@@ -24,6 +24,7 @@
   - [technologies and tools](#technologies-and-tools)
 - [Instalation](#instalation)
 - [Usage](#usage)
+- [Update](#update)
 - [References](#references)
 - [Contributors or owners](#contributors-or-owners)
 - [Contact](#contact)
@@ -123,7 +124,7 @@ Com o **VSCode** aberto, abra o **terminal**. pelo **VsCode** e vamos fazer a in
 
 <sub>Command Line</sub>
 
-```npm
+```bash
 pnpm  install
 ```
 
@@ -140,24 +141,27 @@ pnpm  install
 ## Usage
 
 **2. Inicie o Servidor com o seguinte comando dentro do Terminal**<br>
+
+<details open>
+
+<summary>Gerenciador de pacotes usado</summary>
+
+**Pnpm**
+
+</sdetais>
+
 <sub>Command Line</sub>
 
-```pnpm
-pnpm dev
+```bash
+pnpm  run dev
 ```
 
 </br>
-</br>
-<!-- Importante -->
 
-> [!IMPORTANT]
->
-> O projeto será iniciado, e será aberto no Navegador.
-> Você também pode acessa-lo digitando na Barra de Endereço do seu Navegador
-> **localhost://5173**
+> Ira aparecer um Pop-up solicitanto que você clique para acessar o projeto no seu navegador.
+> Segure a tecla <strong> Control </strong> e clique no local específicado, o projeto será aberto em uma nova aba do seu nagevador Preferido.
 
-</br>
-
+<br>
  <!-- Imagem de Demostração -->
 <h3 align="center"> Imagem de demostração do Projeto</h3>
 
@@ -183,6 +187,12 @@ Acesse a versão on-line Projeto clicando no Link Abaixo
 
 </div>
 <br>
+
+## Update
+
+<br>
+
+> Aqui ire postar as atualizações desse Projeto:
 
 ## References
 
