@@ -1,5 +1,5 @@
 <!-- Banner de Apresentação -->
- <img src="https://github.com/emmanuelmarcosdeoliveira/servidor-estatico/blob/main/banner/emmanuelOliveira.gif" alt="banner-github">
+ <img src="https://github.com/emmanuelmarcosdeoliveira/servidor-estatico/blob/main/github/emmanuelOliveira.gif" alt="banner-github">
 <br>
 <br>
 
@@ -159,12 +159,11 @@ pnpm  run dev
 </br>
 
 > Ira aparecer um Pop-up solicitanto que você clique para acessar o projeto no seu navegador.
-> Segute a tecla <sub>Control</sub> e clique no local específicado, o projeto será aberto em uma nova aba do seu nagevador Preferido.
+> Segure a tecla <strong> Control </strong> e clique no local específicado, o projeto será aberto em uma nova aba do seu nagevador Preferido.
 
 ## Update
 
-> \*\* Aqui ire postar as atualizações desse Projeto:
-> ➡️
+> [!IMPORTANT]Aqui ire postar as atualizações desse Projeto:
 
 <br>
  <!-- Imagem de Demostração -->
