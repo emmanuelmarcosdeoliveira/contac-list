@@ -161,10 +161,6 @@ pnpm  run dev
 > Ira aparecer um Pop-up solicitanto que você clique para acessar o projeto no seu navegador.
 > Segure a tecla <strong> Control </strong> e clique no local específicado, o projeto será aberto em uma nova aba do seu nagevador Preferido.
 
-## Update
-
-> [!IMPORTANT]Aqui ire postar as atualizações desse Projeto:
-
 <br>
  <!-- Imagem de Demostração -->
 <h3 align="center"> Imagem de demostração do Projeto</h3>
@@ -191,6 +187,11 @@ Acesse a versão on-line Projeto clicando no Link Abaixo
 
 </div>
 <br>
+
+## Update
+
+> [!IMPORTANT]
+> Aqui ire postar as atualizações desse Projeto:
 
 ## References
 
