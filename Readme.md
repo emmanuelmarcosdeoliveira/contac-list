@@ -24,6 +24,7 @@
   - [technologies and tools](#technologies-and-tools)
 - [Instalation](#instalation)
 - [Usage](#usage)
+- [Update](#update)
 - [References](#references)
 - [Contributors or owners](#contributors-or-owners)
 - [Contact](#contact)
@@ -123,7 +124,7 @@ Com o **VSCode** aberto, abra o **terminal**. pelo **VsCode** e vamos fazer a in
 
 <sub>Command Line</sub>
 
-```npm
+```bash
 pnpm  install
 ```
 
@@ -151,15 +152,19 @@ pnpm  install
 
 <sub>Command Line</sub>
 
-```npm
+```bash
 pnpm  run dev
 ```
 
 </br>
 
-> [!TIP]
->
-> Helpful advice for doing things better or more easily.
+> Ira aparecer um Pop-up solicitanto que você clique para acessar o projeto no seu navegador.
+> Segute a tecla <sub>Control</sub> e clique no local específicado, o projeto será aberto em uma nova aba do seu nagevador Preferido.
+
+## Update
+
+> \*\* Aqui ire postar as atualizações desse Projeto:
+> ➡️
 
 <br>
  <!-- Imagem de Demostração -->
