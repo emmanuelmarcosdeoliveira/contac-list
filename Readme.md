@@ -192,7 +192,7 @@ Acesse a versão on-line Projeto clicando no Link Abaixo
 
 <br>
 
-> Aqui ire postar as atualizações desse Projeto:
+> Nessa seção teremos as atualizações do Projeto:
 
 ## References
 
